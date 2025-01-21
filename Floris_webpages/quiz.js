@@ -1,46 +1,41 @@
 const questions = [
   {
-    question: "Het eerste vraagje",
-    optionA: "aa",
-    optionB: "aa",
-    optionC: "aa",
-    optionD: "aa",
-    correctOption: "optionD",
-  },
-
-  {
-    question: "Het eerste vraagje",
-    optionA: "aa",
-    optionB: "bb",
-    optionC: "cc",
-    optionD: "dd",
+    question: "Can X-linked SCID be past on to a son thruw the paternal line",
+    optionA: "Yes",
+    optionB: "No",
     correctOption: "optionB",
   },
 
   {
-    question: "Het eerste vraagje",
-    optionA: "aa",
-    optionB: "aa",
-    optionC: "aa",
-    optionD: "aa",
+    question: "Under what genetic condition is SCID active",
+    optionA: "With 2 rececieve genes",
+    optionB: "With 1 rececieve gene and 1 dominant gene",
+    optionC: "With 2 dominant genes ",
+    correctOption: "optionB",
+  },
+
+  {
+    question: "The gene effected by X-linked SCID",
+    optionA: "RAG-1 and RAG-2",
+    optionB: "IL2R Beta",
+    optionC: "IL7R Alpha",
+    optionD: "IL2R Gamma",
     correctOption: "optionD",
   },
 
   {
-    question: "Het eerste vraagje",
-    optionA: "aa",
-    optionB: "aa",
-    optionC: "aa",
-    optionD: "aa",
-    correctOption: "optionC",
+    question: "In X-linked SCID B-cells are present",
+    optionA: "Yes",
+    optionB: "No",
+    correctOption: "optionA",
   },
 
   {
-    question: "Het eerste vraagje",
-    optionA: "aa",
-    optionB: "aa",
-    optionC: "aa",
-    optionD: "24 aa",
+    question: "Wich of the SCID types mentiond has this phenotype T-/B-/NK-)",
+    optionA: "CD45 Deficiency SCID",
+    optionB: "RAG-1 and RAG-2 SCID",
+    optionC: "X-linked SCID",
+    optionD: "None",
     correctOption: "optionD",
   },
 
