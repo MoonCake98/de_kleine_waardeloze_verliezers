@@ -102,9 +102,22 @@
                         <a href="#" class="btn btn-primary my-2"
                             >Take the quiz!</a
                         >
-                        <a href="#" class="btn btn-secondary my-2"
-                            >Go to a random page</a # To-do: implement this to let the user go to a random page. 
-                        >
+                        <a href="#" class="btn btn-secondary my-2" id="randomPageButton">Go to a random page</a>                            
+                        <script>
+                            document.getElementById('randomPageButton').addEventListener('click', function (event) {
+                                event.preventDefault(); // Prevent the default action of the link
+                                const pages = [
+                                    'animal_scids_models.html',
+                                    'bio_markers.html',
+                                    'hereditary.html',
+                                    'T_and_B_cells',
+                                    'treatment.html'
+
+                                ]; // Add the list of your page URLs here
+                                const randomPage = pages[Math.floor(Math.random() * pages.length)];
+                                window.location.href = randomPage;
+                            });
+                        </script>
                     </p>
                 </div>
             </section>
@@ -130,15 +143,11 @@
                                             <button
                                                 type="button"
                                                 class="btn btn-sm btn-outline-secondary"
+                                                onclick="window.location.href='treament.html';"
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
@@ -149,7 +158,7 @@
                             <div class="card mb-4 box-shadow">
                                 <img
                                     class="card-img-top"
-                                    src="placeholder.jpg"
+                                    src="quizz.webp"
                                     alt="Card image cap"
                                 />
                                 <div class="card-body">
@@ -167,15 +176,12 @@
                                             <button
                                                 type="button"
                                                 class="btn btn-sm btn-outline-secondary"
+                                                onclick="window.location.href='quiz.html';"
+
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
@@ -205,29 +211,23 @@
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-4">
                             <div class="card mb-4 box-shadow">
                                 <img
-                                    class="card-img-top"
-                                    src="Leukocyten.jpg"
-                                    alt="Card image cap"
+                                class="card-img-top"
+                                src="scid_types.PNG"
+                                alt="Card image cap"
                                 />
                                 <div class="card-body">
                                     <p class="card-text">
-                                        Invloed op leukocyten:
+                                        T and B Cells
                                     </p>
                                     <div
                                         class="d-flex justify-content-between align-items-center"
@@ -236,15 +236,11 @@
                                             <button
                                                 type="button"
                                                 class="btn btn-sm btn-outline-secondary"
+                                                onclick="window.location.href='T_and_B_cells.html';"
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
@@ -273,12 +269,7 @@
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
@@ -307,119 +298,14 @@
                                             >
                                                 View
                                             </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
+
                                         </div>
                                         <small class="text-muted">9 mins</small>
                                     </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img
-                                    class="card-img-top"
-                                    src="scid_types.PNG"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        T and B Cells
-                                    </p>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center"
-                                    >
-                                        <div class="btn-group">
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                                onclick="window.location.href='T_and_B_cells.html';"
-                                            >
-                                                View
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img
-                                    class="card-img-top"
-                                    src="placeholder.jpg"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        ......
-                                    </p>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center"
-                                    >
-                                        <div class="btn-group">
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                View
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card mb-4 box-shadow">
-                                <img
-                                    class="card-img-top"
-                                    src="placeholder.jpg"
-                                    alt="Card image cap"
-                                />
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        <b>Bronnen:</b>
-                                    </p>
-                                    <div
-                                        class="d-flex justify-content-between align-items-center"
-                                    >
-                                        <div class="btn-group">
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                View
-                                            </button>
-                                            <button
-                                                type="button"
-                                                class="btn btn-sm btn-outline-secondary"
-                                            >
-                                                Edit
-                                            </button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
